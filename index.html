@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Listing App</title>
+    <link rel="stylesheet" href="Directorylist.css">
+</head>
+<body>
+  <div id="directory-app"></div>
+
+  <!-- Modal for adding new items -->
+  <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="addForm">
+              <label for="itemName">Name:</label>
+              <input type="text" id="itemName" required>
+              <label for="type">Type:</label>
+              <select id="type">
+                  <option value="directory">Directory</option>
+                  <option value="file">File</option>
+              </select>
+              <button type="submit">Add</button>
+          </form>
+      </div>
+  </div>
+
+    <script src="Directorylist.js"></script>
+</body>
+</html>
+
+
+
+
+
+
